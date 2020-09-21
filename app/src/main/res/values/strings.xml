@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello Relative</string>
+    <string name="toast">TOAST</string>
+    <string name="count">COUNT</string>
+    <string name="reset">RESET</string>
+    <string name="unCount">UNCOUNT</string>
+</resources>

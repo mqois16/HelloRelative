@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonTop"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/toast"
+        android:onClick="showToast"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/buttonTop"
+        android:layout_marginTop="-16dp"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+
+        android:padding="50dp"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="160sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonBottom"
+        android:layout_below="@id/buttonTop"
+        android:layout_toLeftOf="@id/textView2"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/count"
+        android:onClick="showCount"/>
+
+    <Button
+        android:id="@+id/buttonUncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBottom"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorRed"
+        android:onClick="unCount"
+        android:text="@string/unCount"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_below="@id/buttonUncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkRed"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:textColor="@color/colorGrey"
+        android:textSize="20sp" />
+</RelativeLayout>
